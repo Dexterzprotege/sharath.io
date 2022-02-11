@@ -1,21 +1,51 @@
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/gatsby-config/
+ */
+
 module.exports = {
   siteMetadata: {
-      title: `sharath.io`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Sharath Kamlekar`,
+    description: "Sharath Kamlekar Minimalist Portfolio",
+    author: "@Dexterzprotege",
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
     },
-    __key: "images"
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `SiteName`,
+        short_name: `SiteName`,
+        start_url: `/`,
+        background_color: `#1b1c1e`,
+        theme_color: `#1b1c1e`,
+        display: `minimal-ui`,
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+      },
     },
-    __key: "pages"
-  }]
-};
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+      },
+    },
+    `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-sass`,
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    `gatsby-plugin-offline`,
+  ],
+}
