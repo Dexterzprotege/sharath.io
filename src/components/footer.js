@@ -43,11 +43,11 @@ export default class Footer extends Component {
                     </li>
                     <li className="list-inline-item mr-4" alt="site title">
                       &copy; {new Date().getFullYear()}.{" "}
-                      {data.site.siteMetadata.title}.
+                      {data.site.siteMetadata.title}
                     </li>
                     <li className="list-inline-item mr-4">
                       <a
-                        href="mailto:emailName@gmail.com"
+                        href="mailto:sharath.kamlekar@outlook.com"
                         target="_blank"
                         rel="noreferrer"
                         alt="email link"
@@ -57,7 +57,7 @@ export default class Footer extends Component {
                     </li>
                     <li className="list-inline-item mr-4">
                       <a
-                        href="https://github.com/githubName"
+                        href="https://github.com/Dexterzprotege"
                         target="_blank"
                         rel="noreferrer"
                         alt="github link"
@@ -67,7 +67,7 @@ export default class Footer extends Component {
                     </li>
                     <li className="list-inline-item mr-4">
                       <a
-                        href="https://linkedin.com/linkedInName"
+                        href="https://linkedin.com/in/skamlekar"
                         target="_blank"
                         rel="noreferrer"
                         alt="linkedin link"
