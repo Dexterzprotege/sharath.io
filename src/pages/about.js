@@ -3,6 +3,7 @@ import SEO from "../components/seo"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
+import Content from '../components/landing/content'
 
 const AboutPage = () => (
   <Layout>
@@ -12,7 +13,7 @@ const AboutPage = () => (
         {/* + Title */}
         <div className="row mt-4 justify-content-center">
           <div className="col-lg-7 col-sm-12 my-auto headline">
-            <h1>My mini autobiography~</h1>
+            <h1>Something about me~</h1>
           </div>
         </div>
         {/* - Title */}
@@ -33,24 +34,25 @@ const AboutPage = () => (
                 </div>
 
                 <div className="card-text">
-                  Cupcake ipsum dolor sit amet sweet roll ice cream cheesecake
-                  chocolate. Lemon drops gummi bears biscuit. Pie gingerbread
-                  tart tootsie roll donut cheesecake. Muffin pie gingerbread
-                  dragée pudding tart tootsie roll.
+                  I am a Computer Science undergrad and have great passion for computers and anything tech. I really enjoy competitive programming, 
+                  and try to participate as much as I can (although it is kinda difficult to manage these days). ReactJS is my accomplice and I also enjoy building stuff with AWS Tech.
+                  I am a jack of all trades and master in none. Currently I am into Docker and Virtualization, trying to learn some stuff. My primary interests are on Front-end web Development
+                  and AWS Techonologies and Data analytics.
                 </div>
               </div>
             </div>
           </div>
           {/* - Card */}
 
+          {/* <Content/> */}
           {/* + Image */}
-          <div className="col-lg-6 my-auto mx-auto">
+          {/* <div className="col-lg-6 my-auto mx-auto">
             <Image
               fileName="about.jpg"
               alt="About page"
               className="about-img-wrapper"
             />
-          </div>
+          </div> */}
           {/* - Image */}
 
           {/* + Card */}
@@ -59,16 +61,16 @@ const AboutPage = () => (
               <div className="card-body">
                 <div className="card-title">
                   <h2>More about me</h2>
-                  <h3>sweet and sweeter</h3>
+                  <h3>above and beyond</h3>
                 </div>
 
                 <div className="card-text">
-                  Bonbon chocolate bar ice cream brownie ice cream macaroon
-                  halvah. Toffee tart chupa chups ice cream croissant jujubes
-                  lollipop. Dragée jelly beans sesame snaps wafer muffin sesame
-                  snaps topping bonbon ice cream. Macaroon cake biscuit gummies
-                  sweet sweet chocolate cake. Danish sweet roll carrot cake
-                  croissant. Donut chocolate cake jelly beans.
+                  In my free time, I enjoy participating in Quizzing other Trivia competitions (You know I am something of a Nerd myself 😉).
+                  I also like to watch Anime and currently hooked on watching Shingeki no Kyujin and Jojo's bizzare adventure.
+                  At my very liesure time, I also write some poems and haikus, I have collected all of my work 
+                  <a href="https://gazings.blogspot.com/" target="_blank"> here.</a> (It is going to be embarrasing).
+                  Recently, I have started an habit of book reading and currently I am reading "No Mud, No Lotus".
+                  Hit me up, if you have anything in common and want to discuss!
                 </div>
               </div>
             </div>

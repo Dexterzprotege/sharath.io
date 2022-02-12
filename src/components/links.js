@@ -6,6 +6,7 @@ import {
   faTwitter,
   faGithub,
   faLinkedin,
+  faInstagramSquare
 } from "@fortawesome/free-brands-svg-icons"
 import {LightMode} from '@styled-icons/material/LightMode'
 
@@ -44,7 +45,17 @@ export default function Links() {
       </li>
       <li className="list-group-item">
         <a
-          href="https://twitter.com/twitterName"
+          href="https://instagram.com/sharath.exe"
+          target="_blank"
+          rel="noreferrer"
+          alt="instagram link"
+        >
+          <FontAwesomeIcon icon={faInstagramSquare} />
+        </a>
+      </li>
+      <li className="list-group-item">
+        <a
+          href="https://twitter.com/sharathkamlekar"
           target="_blank"
           rel="noreferrer"
           alt="twitter link"

@@ -7,6 +7,7 @@ import {
   faTwitter,
   faGithub,
   faLinkedin,
+  faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons"
 
 import { Link } from "react-scroll"
@@ -26,7 +27,7 @@ export default class Footer extends Component {
         `}
         render={data => (
           <>
-            <footer>
+            <footer className="fixed-bottom">
               <div className="container py-4">
                 <div className="row justify-content-center mt-2">
                   <ul className="list-style-none">
@@ -75,9 +76,19 @@ export default class Footer extends Component {
                         <FontAwesomeIcon icon={faLinkedin} />
                       </a>
                     </li>
+                    <li className="list-inline-item mr-4">
+                      <a
+                        href="https://instagram.com/sharath.exe"
+                        target="_blank"
+                        rel="noreferrer"
+                        alt="twitter link"
+                      >
+                        <FontAwesomeIcon icon={faInstagramSquare} />
+                      </a>
+                    </li>
                     <li className="list-inline-item">
                       <a
-                        href="https://twitter.com/twitterName"
+                        href="https://twitter.com/sharathkamlekar"
                         target="_blank"
                         rel="noreferrer"
                         alt="twitter link"

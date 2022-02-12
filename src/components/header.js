@@ -79,6 +79,16 @@ export default class Header extends Component {
                       </Link>
                     </li>
                     <li className="nav-item my-auto ml-2">
+                      <Link className="nav-link" to="/blog">
+                        Blog
+                      </Link>
+                    </li>
+                    <li className="nav-item my-auto ml-2">
+                      <Link className="nav-link" to="/uses">
+                        Uses
+                      </Link>
+                    </li>
+                    <li className="nav-item my-auto ml-2">
                       <Link className="nav-link" to="/contact">
                         Contact
                       </Link>

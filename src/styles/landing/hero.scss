@@ -38,19 +38,19 @@ section.hero {
       }
 
       .icon {
-        width: 6rem;
-        height: 6rem;
+        width: 8rem;
+        height: 8rem;
         margin: 0px auto;
-        margin-bottom: 1rem;
+        margin-bottom: 1.2rem;
         text-align: center;
         display: block;
         position: relative;
-        border: 0.3rem solid var(--link-secondary);
+        border: 0.4rem solid var(--link-secondary);
         background: var(--link-secondary);
         border-radius: 100%;
 
         img {
-          border-radius: 100%;
+          border-radius: 50%;
         }
       }
 

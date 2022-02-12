@@ -4,10 +4,15 @@ import Image from "../image"
 import Links from "../links"
 
 import { Link } from "react-scroll"
+import {navigate} from 'gatsby'; 
 
 export default function Hero() {
+  const editPage = () => {
+    navigate('/about'); //navigate to edit page
+  }
+
   return (
-    <section className="hero" id="hero">
+    <section className="hero" style={{ marginTop: '2rem' }} id="hero">
       <div className="container h-50">
         <div className="row h-50 justify-content-around">
           {/* + Hero section: Left side */}
@@ -23,9 +28,9 @@ export default function Hero() {
                 I work as a Systems Development at Amazon and I previously interned at Amazon as well. I like to build some cool front-end stuff. Looking forward to meet you!
               </p>
               <Link
-                to="content"
                 className="main-button btn btn-primary shadow-sm"
                 smooth={true}
+                onClick={() => editPage()}
               >
                 Get to know me
               </Link>
@@ -40,8 +45,8 @@ export default function Hero() {
                 <div className="card-body">
                   <div className="icon">
                     <Image
-                      fileName="photo.jpg"
-                      style={{ width: "5rem", height: "5rem" }}
+                      fileName="photo.png"
+                      style={{ width: "8rem", height: "8rem" }}
                       alt="Hero Icon"
                     />
                   </div>
@@ -61,8 +66,8 @@ export default function Hero() {
                   <p className="card-text">
                     Full-time Software Dev,
                     <br />
-                    Competitive Programming
-                    <br/>
+                    Competitive Programming,
+                    <br />
                     Front-end aficionado
                   </p>
                   <Links />

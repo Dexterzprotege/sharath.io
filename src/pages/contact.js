@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Links from "../components/links"
 import contactimg from "../images/contactimg.svg"
+import resume from '../images/resume.pdf'
 
 const ContactPage = () => (
   <Layout>
@@ -25,14 +26,15 @@ const ContactPage = () => (
             </p>
             <ul>
               <li>Website Development</li>
-              <li>User Interface (UI) Design</li>
-              <li>Logo Creation</li>
-              <li>Website Scraping Automation</li>
-              <li>Quality Assurance Testing</li>
+              <li>Web Scraping</li>
+              <li>AWS Integration</li>
+              <li>Data analytics</li>
+              <li>CI/CD Development</li>
+              <li>Application Development</li>
             </ul>
 
             <a
-              href="content"
+              href={resume}
               className="main-button btn btn-primary shadow-sm mt-2"
             >
               Download my resume
