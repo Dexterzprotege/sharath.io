@@ -7,6 +7,9 @@
   Gatsby minimal starter
 </h1>
 
+This site is heavily inspired from - https://github.com/gmlunesa/gatsby-starter-personal-portfolio
+Kudos to @gmlunesa for coming up with such a great idea!
+
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
