@@ -8,8 +8,10 @@
 @import "../styles/landing/hero.scss";
 @import "../styles/landing/content.scss";
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+
 body {
-  font-family: "Montserrat", "Arial", "sans-serif";
+  font-family: "Poppins", "Arial", "sans-serif";
   font-weight: 450;
 
   color: var(--base);

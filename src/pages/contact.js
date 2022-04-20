@@ -26,10 +26,8 @@ const ContactPage = () => (
             </p>
             <ul>
               <li>Website Development</li>
-              <li>Web Scraping</li>
               <li>AWS Integration</li>
               <li>Data analytics</li>
-              <li>CI/CD Development</li>
               <li>Application Development</li>
             </ul>
 
