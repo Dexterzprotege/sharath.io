@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Links from "../components/links"
 import contactimg from "../images/contactimg.svg"
 import resume from '../images/resume.pdf'
+import coverletter from '../images/coverletter.pdf'
 
 const ContactPage = () => (
   <Layout>
@@ -36,7 +37,15 @@ const ContactPage = () => (
               className="main-button btn btn-primary shadow-sm mt-2"
             >
               Download my resume
+            </a> <br />
+                
+            <a
+              href={coverletter}
+              className="main-button btn btn-primary shadow-sm mt-2"
+            >
+              View my Cover Letter
             </a>
+
           </div>
           <div className="col-lg-4 my-auto">
             <div className="img-container">
